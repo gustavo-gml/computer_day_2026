@@ -3,12 +3,12 @@ export default function About() {
     {
       title: 'O Evento',
       icon: '📚',
-      description: 'A Jornada da Computação é um encontro relacionado a tecnologia organizado diretamente por professores e alunos, no qual reúnem minicursos e palestras para compartilhar conhecimentos e experiências.'
+      description: 'O Computer Day é um evento anual voltado para a área de Tecnologia, organizado pelo Departamento de Computação do IFSULDEMINAS - Campus Machado.'
     },
     {
       title: 'Conteúdo',
       icon: '✏️',
-      description: 'O evento contará com palestras, minicursos, oficinas diversas voltadas para as áreas de Computação e Educação, todas gratuitas para os participantes.'
+      description: 'A programação une teoria e prática através de palestras sobre temas como Inteligência Artificial e cibersegurança, além de minicursos de programação e gestão ágil. O encontro também conta com painéis focados em empreendedorismo e exposições de projetos tecnológicos criados pelos próprios alunos.'
     },
     {
       title: 'Objetivo',

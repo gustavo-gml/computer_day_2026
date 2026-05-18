@@ -1,35 +1,23 @@
 export default function Schedule() {
-  const dates = ['17/10/2022', '18/10/2022', '19/10/2022', '20/10/2022'];
-  
   return (
-    <section id="agenda" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Agenda</h2>
-        
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {dates.map((date, index) => (
-            <button 
-              key={date}
-              className={`px-6 py-2 text-sm font-medium transition-colors ${
-                index === 0 ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-            >
-              {date}
-            </button>
-          ))}
+    <section id="agenda" className="py-20 bg-dark border-b-4 border-primary-bright relative">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#31ac8722_1px,transparent_1px),linear-gradient(to_bottom,#31ac8722_1px,transparent_1px)] bg-[size:32px_32px]"></div>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="inline-flex bg-primary-bright text-black px-6 md:px-8 py-3 md:py-4 border-4 border-black shadow-[6px_6px_0_#31ac87] mb-12 mx-auto max-w-[90vw] text-center transform rotate-1">
+          <h2 className="text-2xl md:text-5xl font-black uppercase tracking-widest">Agenda</h2>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-white border border-gray-200 p-6 rounded">
-          <div className="space-y-4">
+        <div className="max-w-[calc(100%-8px)] md:max-w-4xl mx-auto bg-primary border-4 border-black p-6 md:p-8 rounded-none shadow-[8px_8px_0_#00ff97] mr-[8px] mb-[8px] md:mr-auto">
+          <div className="space-y-6">
             {/* Mock Schedule Items */}
             {[1, 2, 3].map((item) => (
-              <div key={item} className="flex flex-col md:flex-row border-b border-gray-100 pb-4 last:border-0 last:pb-0">
-                <div className="md:w-32 font-bold text-gray-600 mb-2 md:mb-0">
+              <div key={item} className="flex flex-col md:flex-row border-b-4 border-black pb-6 last:border-0 last:pb-0 items-start md:items-center">
+                <div className="md:w-48 font-black text-black bg-white border-2 border-black px-3 py-1 shadow-[2px_2px_0_#000] mb-4 md:mb-0 text-center text-lg">
                   19:00 - 20:30
                 </div>
-                <div className="flex-1">
-                  <h4 className="text-lg font-medium text-gray-800">Palestra Magna: O Futuro da Computação {item}</h4>
-                  <p className="text-gray-500 text-sm mt-1">Palestrante Convidado - Auditório Principal</p>
+                <div className="flex-1 md:pl-8">
+                  <h4 className="text-xl md:text-2xl font-black text-white uppercase drop-shadow-[2px_2px_0_#000]">Palestra Magna: O Futuro da Computação {item}</h4>
+                  <p className="text-black font-bold mt-2 text-lg uppercase tracking-wide">Palestrante Convidado - Auditório Principal</p>
                 </div>
               </div>
             ))}

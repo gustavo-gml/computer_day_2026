@@ -8,7 +8,7 @@ export default function About() {
     {
       title: 'Conteúdo',
       icon: '✏️',
-      description: 'A programação une teoria e prática através de palestras sobre temas como Inteligência Artificial e cibersegurança, além de minicursos de programação e gestão ágil. O encontro também conta com painéis focados em empreendedorismo e exposições de projetos tecnológicos criados pelos próprios alunos.'
+      description: 'A programação une teoria e prática através de palestras, minicursos e rodas de conversa'
     },
     {
       title: 'Objetivo',
@@ -18,18 +18,20 @@ export default function About() {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-16">Sobre A Jornada</h2>
+    <section id="sobre" className="py-20 bg-primary border-b-4 border-black relative">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="inline-flex bg-black text-primary-bright px-6 md:px-8 py-3 md:py-4 border-4 border-black shadow-[6px_6px_0_rgba(0,0,0,1)] mb-16 mx-auto max-w-[90vw] text-center transform -rotate-2">
+          <h2 className="text-2xl md:text-5xl font-black uppercase tracking-widest drop-shadow-[2px_2px_0_#fff]">Sobre A Jornada</h2>
+        </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pillars.map((pillar, index) => (
-            <div key={index} className="border border-gray-200 p-8 text-center relative mt-6 bg-gray-50">
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-gray-700 flex items-center justify-center text-white text-xl">
+            <div key={index} className="border-4 border-black p-8 text-center relative mt-6 bg-secondary shadow-[8px_8px_0_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0_rgba(0,0,0,1)] transition-all mr-[8px] mb-[8px]">
+              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-primary-bright border-4 border-black flex items-center justify-center text-3xl shadow-[4px_4px_0_rgba(0,0,0,1)] z-10">
                 {pillar.icon}
               </div>
-              <h3 className="text-xl font-medium text-gray-700 mt-4 mb-4">{pillar.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <h3 className="text-2xl font-black text-black mt-6 mb-4 uppercase tracking-wider">{pillar.title}</h3>
+              <p className="text-black font-medium text-base leading-relaxed">
                 {pillar.description}
               </p>
             </div>

@@ -44,7 +44,7 @@ export default function Countdown() {
         
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 max-w-4xl mx-auto">
           {Object.entries(timeLeft).map(([unit, value]) => (
-            <div key={unit} className="flex-1 min-w-[120px] border-4 border-primary-bright p-4 md:p-8 bg-dark shadow-[6px_6px_0_#00ff97]">
+            <div key={unit} className="flex-1 min-w-[120px] border-4 border-primary-bright p-4 md:p-8 bg-dark shadow-[6px_6px_0_#00ff97] mr-[6px] mb-[6px]">
               <div className="text-5xl md:text-7xl font-black text-primary-bright mb-2 drop-shadow-[2px_2px_0_#fff]">{value}</div>
               <div className="text-white font-bold text-sm md:text-lg uppercase tracking-widest">{unit}</div>
             </div>

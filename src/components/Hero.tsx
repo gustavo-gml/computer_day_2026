@@ -19,13 +19,13 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col items-center max-w-3xl mx-auto">
-          <div className="bg-primary text-white border-4 border-black p-4 md:p-6 shadow-[6px_6px_0_#000] mb-8 w-full">
+          <div className="bg-primary text-white border-4 border-black p-4 md:p-6 shadow-[6px_6px_0_#000] mb-8 w-full max-w-[calc(100%-6px)] mr-[6px]">
             <h2 className="text-xl md:text-3xl font-black uppercase text-black drop-shadow-[2px_2px_0_#fff] text-center md:text-justify break-words">
               Um dia para criar, aprender e experimentar tecnologia.
             </h2>
           </div>
 
-          <div className="bg-primary-bright text-black border-4 border-black p-4 shadow-[6px_6px_0_#000] mb-10 w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 font-bold text-lg md:text-xl uppercase">
+          <div className="bg-primary-bright text-black border-4 border-black p-4 shadow-[6px_6px_0_#000] mb-10 w-full max-w-[calc(100%-6px)] mr-[6px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 font-bold text-lg md:text-xl uppercase">
             <div className="flex items-center text-center">
               <svg className="w-6 h-6 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
               <span>IFSULDEMINAS <br className="md:hidden" />- Campus Machado</span>
@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-6" id="inscreva-se">
           <button 
             onClick={() => setIsModalOpen(true)}
-            className="bg-black text-primary-bright border-4 border-primary-bright px-8 py-4 text-xl font-black hover:bg-primary-bright hover:text-black hover:border-black transition-all shadow-[6px_6px_0_#00ff97] hover:shadow-[6px_6px_0_#000] uppercase tracking-wider relative group"
+            className="bg-black text-primary-bright border-4 border-primary-bright px-8 py-4 text-xl font-black hover:bg-primary-bright hover:text-black hover:border-black transition-all shadow-[6px_6px_0_#00ff97] hover:shadow-[6px_6px_0_#000] uppercase tracking-wider relative group mb-[6px] mr-[6px]"
           >
             <span className="relative z-10">INSCREVA-SE</span>
             <div className="absolute inset-0 bg-primary-bright transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left z-0"></div>

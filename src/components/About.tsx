@@ -26,7 +26,7 @@ export default function About() {
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pillars.map((pillar, index) => (
-            <div key={index} className="border-4 border-black p-8 text-center relative mt-6 bg-secondary shadow-[8px_8px_0_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0_rgba(0,0,0,1)] transition-all">
+            <div key={index} className="border-4 border-black p-8 text-center relative mt-6 bg-secondary shadow-[8px_8px_0_rgba(0,0,0,1)] hover:-translate-y-2 hover:shadow-[12px_12px_0_rgba(0,0,0,1)] transition-all mr-[8px] mb-[8px]">
               <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-primary-bright border-4 border-black flex items-center justify-center text-3xl shadow-[4px_4px_0_rgba(0,0,0,1)] z-10">
                 {pillar.icon}
               </div>

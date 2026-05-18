@@ -12,7 +12,7 @@ export default function Sponsors() {
           {sponsors.map((id) => (
             <div 
               key={id} 
-              className="h-32 bg-white border-4 border-black flex items-center justify-center shadow-[6px_6px_0_#000] hover:-translate-y-2 hover:shadow-[10px_10px_0_#000] transition-all cursor-pointer"
+              className="h-32 bg-white border-4 border-black flex items-center justify-center shadow-[6px_6px_0_#000] hover:-translate-y-2 hover:shadow-[10px_10px_0_#000] transition-all cursor-pointer mr-[6px] mb-[6px]"
             >
               <span className="text-black font-black text-xl uppercase">Logo {id}</span>
             </div>

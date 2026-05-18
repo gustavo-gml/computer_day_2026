@@ -7,7 +7,7 @@ export default function Schedule() {
           <h2 className="text-2xl md:text-5xl font-black uppercase tracking-widest">Agenda</h2>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-primary border-4 border-black p-6 md:p-8 rounded-none shadow-[8px_8px_0_#00ff97]">
+        <div className="max-w-[calc(100%-8px)] md:max-w-4xl mx-auto bg-primary border-4 border-black p-6 md:p-8 rounded-none shadow-[8px_8px_0_#00ff97] mr-[8px] mb-[8px] md:mr-auto">
           <div className="space-y-6">
             {/* Mock Schedule Items */}
             {[1, 2, 3].map((item) => (

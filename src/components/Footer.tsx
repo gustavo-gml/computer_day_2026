@@ -7,7 +7,7 @@ export default function Footer() {
         
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
           {/* Contact Form */}
-          <div className="bg-primary p-6 md:p-8 border-4 border-black shadow-[8px_8px_0_#00ff97]">
+          <div className="bg-primary p-6 md:p-8 border-4 border-black shadow-[8px_8px_0_#00ff97] w-full max-w-[calc(100%-8px)] mr-[8px]">
             <h3 className="text-2xl font-black text-black mb-6 uppercase">Mande-nos um e-mail:</h3>
             <form className="space-y-4">
               <div>
@@ -35,7 +35,7 @@ export default function Footer() {
 
           {/* Map and Social */}
           <div className="space-y-8 flex flex-col justify-between">
-            <div className="bg-secondary p-6 md:p-8 border-4 border-black shadow-[8px_8px_0_#fff]">
+            <div className="bg-secondary p-6 md:p-8 border-4 border-black shadow-[8px_8px_0_#fff] w-full max-w-[calc(100%-8px)] mr-[8px]">
               <h3 className="text-2xl font-black text-black mb-6 uppercase">Redes Sociais:</h3>
               <div className="flex items-center gap-4 md:gap-6 flex-wrap">
                 <a href="https://www.instagram.com/ifsuldeminasmachado/" target="_blank" rel="noopener noreferrer" className="w-14 h-14 md:w-16 md:h-16 bg-primary-bright border-4 border-black flex items-center justify-center text-black font-black text-xl md:text-2xl hover:bg-white shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all">IG</a>
@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="bg-white p-6 md:p-8 border-4 border-black shadow-[8px_8px_0_#31ac87] flex-1 flex flex-col">
+            <div className="bg-white p-6 md:p-8 border-4 border-black shadow-[8px_8px_0_#31ac87] flex-1 flex flex-col w-full max-w-[calc(100%-8px)] mr-[8px]">
               <h3 className="text-2xl font-black text-black mb-2 uppercase">Localização:</h3>
               <p className="text-black font-bold text-sm mb-4 leading-tight uppercase">
                 IFSULDEMINAS - Campus Machado<br/>

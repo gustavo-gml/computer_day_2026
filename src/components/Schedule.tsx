@@ -1,4 +1,27 @@
 export default function Schedule() {
+  const scheduleItems = [
+    {
+      time: "09:15 - 09:30",
+      title: "Abertura e Apresentação de Projetos",
+      speaker: ""
+    },
+    {
+      time: "09:30 - 10:20",
+      title: "start_Engenharia: Ciência, Tecnologia e Carreiras",
+      speaker: "Marcelo Henrique (Inatel) | Presencial - Espaço Sociocultural (IFSULDEMINAS Machado)"
+    },
+    {
+      time: "19:15 - 19:45",
+      title: "Intercâmbio Acadêmico e Novas Tecnologias",
+      speaker: "Pedro Franco (IP Bragança / IFSULDEMINAS) | Remoto"
+    },
+    {
+      time: "20:00",
+      title: "Tecnologia, Inclusão e Autonomia",
+      speaker: "Laissa Soares (Colibri Interfaces e Tecnologias) | Remota"
+    }
+  ];
+
   return (
     <section id="agenda" className="py-20 bg-dark border-b-4 border-primary-bright relative">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#31ac8722_1px,transparent_1px),linear-gradient(to_bottom,#31ac8722_1px,transparent_1px)] bg-[size:32px_32px]"></div>
@@ -8,16 +31,21 @@ export default function Schedule() {
         </div>
 
         <div className="max-w-[calc(100%-8px)] md:max-w-4xl mx-auto bg-primary border-4 border-black p-6 md:p-8 rounded-none shadow-[8px_8px_0_#00ff97] mr-[8px] mb-[8px] md:mr-auto">
-          <div className="space-y-6">
-            {/* Mock Schedule Items */}
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="flex flex-col md:flex-row border-b-4 border-black pb-6 last:border-0 last:pb-0 items-start md:items-center">
-                <div className="md:w-48 font-black text-black bg-white border-2 border-black px-3 py-1 shadow-[2px_2px_0_#000] mb-4 md:mb-0 text-center text-lg">
-                  19:00 - 20:30
+          <div className="space-y-8">
+            {scheduleItems.map((item, index) => (
+              <div key={index} className="flex flex-col md:flex-row border-b-4 border-black pb-8 last:border-0 last:pb-0 items-start">
+                <div className="md:w-56 font-black text-black bg-white border-4 border-black px-4 py-2 shadow-[4px_4px_0_#000] mb-4 md:mb-0 text-center text-lg md:text-xl whitespace-nowrap transform -rotate-1 hover:rotate-0 transition-transform cursor-default">
+                  {item.time}
                 </div>
                 <div className="flex-1 md:pl-8">
-                  <h4 className="text-xl md:text-2xl font-black text-white uppercase drop-shadow-[2px_2px_0_#000]">Palestra Magna: O Futuro da Computação {item}</h4>
-                  <p className="text-black font-bold mt-2 text-lg uppercase tracking-wide">Palestrante Convidado - Auditório Principal</p>
+                  <h4 className="text-xl md:text-2xl font-black text-white uppercase drop-shadow-[2px_2px_0_#000] mb-2 leading-tight">
+                    {item.title}
+                  </h4>
+                  {item.speaker && (
+                    <p className="text-black font-black text-sm md:text-base uppercase tracking-wider mb-3 bg-[#f9a826] inline-block px-3 py-1 border-2 border-black shadow-[2px_2px_0_#000]">
+                      🎤 {item.speaker}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

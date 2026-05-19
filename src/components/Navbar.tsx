@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import RegistrationModal from './RegistrationModal';
 
 export default function Navbar() {
@@ -17,12 +18,17 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-dark border-b-4 border-primary-bright">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between md:justify-center">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         
-        {/* Mobile Logo / Title */}
-        <div className="md:hidden font-bold text-light uppercase tracking-widest">
-          Computer Day
-        </div>
+        {/* Logo */}
+        <Link href="#home" className="flex items-center group">
+          <div className="w-10 h-10 border-2 border-primary-bright shadow-[2px_2px_0_#00ff97] group-hover:translate-x-[2px] group-hover:translate-y-[2px] group-hover:shadow-none transition-all bg-black flex items-center justify-center">
+            <Image src="/logo.png" alt="Computer Day Logo" width={40} height={40} className="object-cover" />
+          </div>
+          <span className="ml-3 font-black text-light uppercase tracking-widest hidden md:block group-hover:text-primary-bright transition-colors">
+            Computer Day
+          </span>
+        </Link>
 
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">

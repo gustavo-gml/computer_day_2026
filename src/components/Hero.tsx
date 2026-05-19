@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 import RegistrationModal from './RegistrationModal';
 
 export default function Hero() {
@@ -13,12 +14,12 @@ export default function Hero() {
           Computer Day
         </h1>
 
-        {/* Logo Placeholder - Brutalist Style */}
-        <div className="w-32 h-32 md:w-48 md:h-48 mx-auto bg-primary-bright border-4 border-black flex items-center justify-center mb-8 shadow-[8px_8px_0_#000]">
-          <span className="text-black font-black text-2xl md:text-3xl rotate-[-5deg]">LOGO</span>
+        {/* Logo */}
+        <div className="w-32 h-32 md:w-48 md:h-48 mx-auto border-4 border-black flex items-center justify-center mb-8 shadow-[8px_8px_0_#000] bg-black overflow-hidden hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[12px_12px_0_#00ff97] transition-all duration-300">
+          <Image src="/logo.png" alt="Computer Day Logo" width={192} height={192} className="object-cover w-full h-full" priority />
         </div>
 
-        <div className="flex flex-col items-center max-w-3xl mx-auto">
+      <div className="flex flex-col items-center max-w-3xl mx-auto">
           <div className="bg-primary text-white border-4 border-black p-4 md:p-6 shadow-[6px_6px_0_#000] mb-8 w-full max-w-[calc(100%-6px)] mr-[6px]">
             <h2 className="text-xl md:text-3xl font-black uppercase text-black drop-shadow-[2px_2px_0_#fff] text-center md:text-justify break-words">
               Um dia para criar, aprender e experimentar tecnologia.
@@ -46,7 +47,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-primary-bright transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left z-0"></div>
           </button>
           <div className="bg-black text-white border-2 border-white px-4 py-2 text-sm font-bold uppercase tracking-widest rotate-2 shadow-[2px_2px_0_#fff]">
-            Inscrições abertas
+            Inscrições em breve
           </div>
         </div>
       </div>

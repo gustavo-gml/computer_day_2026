@@ -29,12 +29,18 @@ export default function RegistrationModal({ isOpen, onClose }: RegistrationModal
         <p className="text-black font-bold mb-8 uppercase tracking-wide">Escolha qual modalidade você deseja participar:</p>
 
         <div className="flex flex-col gap-4">
-          <a href="#" className="bg-[#f9a826] text-black border-4 border-black py-4 px-6 text-center font-black text-xl uppercase tracking-wider shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all">
+          <button 
+            onClick={() => alert("As inscrições começam em breve!")}
+            className="w-full bg-[#f9a826] text-black border-4 border-black py-4 px-6 text-center font-black text-xl uppercase tracking-wider shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all cursor-pointer"
+          >
             Palestras
-          </a>
-          <a href="#" className="bg-primary text-black border-4 border-black py-4 px-6 text-center font-black text-xl uppercase tracking-wider shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all">
+          </button>
+          <button 
+            onClick={() => alert("As inscrições começam em breve!")}
+            className="w-full bg-primary text-black border-4 border-black py-4 px-6 text-center font-black text-xl uppercase tracking-wider shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all cursor-pointer"
+          >
             Minicursos
-          </a>
+          </button>
         </div>
       </div>
     </div>

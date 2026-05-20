@@ -8,7 +8,7 @@ export default function About() {
     {
       title: 'Conteúdo',
       icon: '✏️',
-      description: 'A programação une teoria e prática através de palestras, minicursos e rodas de conversa'
+      description: 'A programação une teoria e prática através de palestras, minicursos, rodas de conversa e exposição de projetos.'
     },
     {
       title: 'Objetivo',
@@ -18,7 +18,7 @@ export default function About() {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-primary border-b-4 border-black relative">
+    <section id="sobre" className="py-20 bg-primary border-b-4 border-primary-bright relative">
       <div className="container mx-auto px-4 relative z-10">
         <div className="inline-flex bg-black text-primary-bright px-6 md:px-8 py-3 md:py-4 border-4 border-black shadow-[6px_6px_0_rgba(0,0,0,1)] mb-16 mx-auto max-w-[90vw] text-center transform -rotate-2">
           <h2 className="text-2xl md:text-5xl font-black uppercase tracking-widest drop-shadow-[2px_2px_0_#fff]">Sobre o Computer Day</h2>
@@ -31,7 +31,7 @@ export default function About() {
                 {pillar.icon}
               </div>
               <h3 className="text-2xl font-black text-black mt-6 mb-4 uppercase tracking-wider">{pillar.title}</h3>
-              <p className="text-black font-medium text-base leading-relaxed">
+              <p className="text-black font-medium text-base leading-relaxed text-justify">
                 {pillar.description}
               </p>
             </div>

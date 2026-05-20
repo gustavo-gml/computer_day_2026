@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-primary-bright transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left z-0"></div>
           </button>
           <div className="bg-black text-white border-2 border-white px-4 py-2 text-sm font-bold uppercase tracking-widest rotate-2 shadow-[2px_2px_0_#fff]">
-            Inscrições em breve
+            Inscrições Disponíveis!
           </div>
         </div>
       </div>

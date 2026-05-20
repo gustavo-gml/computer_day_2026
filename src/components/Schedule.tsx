@@ -3,22 +3,30 @@ export default function Schedule() {
     {
       time: "09:15 - 09:30",
       title: "Abertura e Apresentação de Projetos",
-      speaker: ""
+      speaker: "",
+      type: "Exposição",
+      location: "Presencial - Auditório"
     },
     {
       time: "09:30 - 10:20",
       title: "start_Engenharia: Ciência, Tecnologia e Carreiras",
-      speaker: "Marcelo Henrique (Inatel) | Presencial - Espaço Sociocultural (IFSULDEMINAS Machado)"
+      speaker: "Marcelo Henrique (Inatel)",
+      type: "Palestra",
+      location: "Presencial - Auditório"
     },
     {
       time: "19:15 - 19:45",
       title: "Intercâmbio Acadêmico e Novas Tecnologias",
-      speaker: "Pedro Franco (IP Bragança / IFSULDEMINAS) | Remoto"
+      speaker: "Pedro Franco (IP Bragança / IFSULDEMINAS)",
+      type: "Palestra",
+      location: "Remoto"
     },
     {
       time: "20:00",
       title: "Tecnologia, Inclusão e Autonomia",
-      speaker: "Laissa Soares (Colibri Interfaces e Tecnologias) | Remota"
+      speaker: "Laissa Soares (Colibri Interfaces e Tecnologias)",
+      type: "Palestra",
+      location: "Remoto"
     }
   ];
 
@@ -38,6 +46,18 @@ export default function Schedule() {
                   {item.time}
                 </div>
                 <div className="flex-1 md:pl-8">
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {item.type && (
+                      <span className="text-black font-black text-xs md:text-sm uppercase tracking-wider bg-[#00ff97] px-2 py-1 border-2 border-black shadow-[2px_2px_0_#000]">
+                        {item.type}
+                      </span>
+                    )}
+                    {item.location && (
+                      <span className="text-black font-black text-xs md:text-sm uppercase tracking-wider bg-[#ff90e8] px-2 py-1 border-2 border-black shadow-[2px_2px_0_#000]">
+                        📍 {item.location}
+                      </span>
+                    )}
+                  </div>
                   <h4 className="text-xl md:text-2xl font-black text-white uppercase drop-shadow-[2px_2px_0_#000] mb-2 leading-tight">
                     {item.title}
                   </h4>

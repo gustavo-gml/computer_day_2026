@@ -1,5 +1,7 @@
 "use client";
 
+import { FaInstagram, FaFacebook, FaGlobe, FaEnvelope } from 'react-icons/fa6';
+
 export default function Footer() {
   return (
     <footer id="contato" className="bg-dark pt-16 border-t-4 border-primary-bright text-white relative">
@@ -14,14 +16,20 @@ export default function Footer() {
             <h3 className="text-2xl font-black text-black mb-6 uppercase text-center md:text-left">Redes Sociais e Contato:</h3>
             <div className="flex flex-col md:flex-row items-stretch justify-center gap-6">
                <a href="mailto:comunica.machado@ifsuldeminas.edu.br" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black px-8 py-6 flex items-center justify-center shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all cursor-pointer group min-h-[80px]">
-                 <span className="font-black text-xl text-black uppercase tracking-wider transition-colors">
-                   Enviar E-mail
+                 <span className="font-black text-xl text-black uppercase tracking-wider transition-colors flex items-center gap-3">
+                   <FaEnvelope className="w-6 h-6" /> Enviar E-mail
                  </span>
                </a>
                <div className="flex-1 flex gap-6">
-                 <a href="https://www.instagram.com/ifsuldeminasmachado/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black flex items-center justify-center text-black font-black text-2xl shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all min-h-[80px]">IG</a>
-                 <a href="https://www.facebook.com/ifsuldeminasmachado/?locale=pt_BR" target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black flex items-center justify-center text-black font-black text-2xl shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all min-h-[80px]">FB</a>
-                 <a href="https://portal.mch.ifsuldeminas.edu.br/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black flex items-center justify-center text-black font-black text-xl shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all min-h-[80px]">SITE</a>
+                 <a href="https://www.instagram.com/informatica.ifmachado" target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black flex items-center justify-center text-black font-black text-2xl shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all min-h-[80px]" aria-label="Instagram">
+                   <FaInstagram className="w-8 h-8" />
+                 </a>
+                 <a href="https://www.facebook.com/informaticaifmachado" target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black flex items-center justify-center text-black font-black text-2xl shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all min-h-[80px]" aria-label="Facebook">
+                   <FaFacebook className="w-8 h-8" />
+                 </a>
+                 <a href="https://portal.mch.ifsuldeminas.edu.br/" target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black flex items-center justify-center text-black font-black text-xl shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all min-h-[80px]" aria-label="Site Oficial">
+                   <FaGlobe className="w-8 h-8" />
+                 </a>
                </div>
             </div>
           </div>

@@ -1,5 +1,14 @@
 export default function Schedule() {
-  const scheduleItems = [
+  type ScheduleItem = {
+    time: string;
+    title: string;
+    speaker?: string;
+    type?: string;
+    location?: string;
+    description?: string;
+  };
+
+  const scheduleItems: ScheduleItem[] = [
     {
       time: "09:15 - 09:30",
       title: "Abertura e Apresentação de Projetos",
@@ -15,11 +24,51 @@ export default function Schedule() {
       location: "Presencial - Auditório"
     },
     {
+      time: "13:00 - 16:00",
+      title: "Robótica Móvel com Lego NXT",
+      speaker: "",
+      type: "Minicurso",
+      location: "Presencial",
+      description: "Introdução à robótica através da montagem e programação com blocos Lego."
+    },
+    {
+      time: "13:00 - 16:00",
+      title: "Programação com Arduino",
+      speaker: "",
+      type: "Minicurso",
+      location: "Presencial",
+      description: "Introdução aos conceitos básicos de programação e montagem de circuitos interativos para iniciantes."
+    },
+    {
+      time: "13:00 - 16:00",
+      title: "Modelagem e Impressão 3D",
+      speaker: "",
+      type: "Minicurso",
+      location: "Presencial",
+      description: "Técnicas de criação de modelos 3D e preparação para impressão física."
+    },
+    {
+      time: "13:00 - 16:00",
+      title: "Visão Computacional",
+      speaker: "",
+      type: "Minicurso",
+      location: "Presencial",
+      description: "Fundamentos de como fazer sistemas computacionais enxergarem o mundo real."
+    },
+    {
+      time: "13:00 - 16:00",
+      title: "OBI - Olimpíada Brasileira de Informática",
+      speaker: "",
+      type: "Minicurso",
+      location: "Presencial",
+      description: "Apenas para alunos do Ensino Técnico e 1º período de Sistemas de Informação."
+    },
+    {
       time: "19:15 - 19:45",
       title: "Intercâmbio Acadêmico e Novas Tecnologias",
       speaker: "Pedro Franco (IP Bragança / IFSULDEMINAS)",
       type: "Palestra",
-      location: "Remoto"
+      location: "Remoto",
     },
     {
       time: "20:00",
@@ -61,6 +110,11 @@ export default function Schedule() {
                   <h4 className="text-xl md:text-2xl font-black text-white uppercase drop-shadow-[2px_2px_0_#000] mb-2 leading-tight">
                     {item.title}
                   </h4>
+                  {item.description && (
+                    <p className="text-white text-sm md:text-base mb-3 font-medium max-w-2xl drop-shadow-[1px_1px_0_#000]">
+                      {item.description}
+                    </p>
+                  )}
                   {item.speaker && (
                     <p className="text-black font-black text-sm md:text-base uppercase tracking-wider mb-3 bg-[#f9a826] inline-block px-3 py-1 border-2 border-black shadow-[2px_2px_0_#000]">
                       🎤 {item.speaker}

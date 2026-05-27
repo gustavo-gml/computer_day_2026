@@ -13,6 +13,7 @@ export default function Navbar() {
     { name: 'HOME', href: '#home' },
     { name: 'SOBRE', href: '#sobre' },
     { name: 'AGENDA', href: '#agenda' },
+    { name: 'PATROCINADOR', href: '#patrocinadores' },
     { name: 'CONTATO', href: '#contato' },
   ];
 

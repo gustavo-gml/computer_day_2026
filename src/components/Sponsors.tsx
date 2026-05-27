@@ -3,10 +3,10 @@ import { FaInstagram } from 'react-icons/fa6';
 
 export default function Sponsors() {
   return (
-    <section className="py-20 bg-primary border-b-4 border-black relative">
+    <section id="patrocinadores" className="py-20 bg-primary border-b-4 border-black relative">
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="inline-flex bg-black text-white px-6 md:px-8 py-3 md:py-4 border-4 border-black shadow-[6px_6px_0_#fff] mb-12 mx-auto max-w-[90vw] text-center">
-          <h2 className="text-2xl md:text-5xl font-black uppercase tracking-widest drop-shadow-[2px_2px_0_#31ac87]">Patrocinadora Oficial</h2>
+          <h2 className="text-2xl md:text-5xl font-black uppercase tracking-widest drop-shadow-[2px_2px_0_#31ac87]">Patrocinador Oficial</h2>
         </div>
         
         <div className="flex flex-col items-center justify-center max-w-6xl mx-auto">

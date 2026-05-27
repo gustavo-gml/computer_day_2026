@@ -24,7 +24,7 @@ export default function Schedule() {
       location: "Presencial - Auditório"
     },
     {
-      time: "13:00 - 16:00",
+      time: "13:00 - 16:30",
       title: "Robótica Móvel com Lego NXT",
       speaker: "",
       type: "Minicurso",
@@ -32,7 +32,7 @@ export default function Schedule() {
       description: "Introdução à robótica através da montagem e programação com blocos Lego."
     },
     {
-      time: "13:00 - 16:00",
+      time: "13:00 - 16:30",
       title: "Programação com Arduino",
       speaker: "",
       type: "Minicurso",
@@ -40,7 +40,7 @@ export default function Schedule() {
       description: "Introdução aos conceitos básicos de programação e montagem de circuitos interativos para iniciantes."
     },
     {
-      time: "13:00 - 16:00",
+      time: "13:00 - 16:30",
       title: "Modelagem e Impressão 3D",
       speaker: "",
       type: "Minicurso",
@@ -48,7 +48,7 @@ export default function Schedule() {
       description: "Técnicas de criação de modelos 3D e preparação para impressão física."
     },
     {
-      time: "13:00 - 16:00",
+      time: "13:00 - 16:30",
       title: "Visão Computacional",
       speaker: "",
       type: "Minicurso",
@@ -56,7 +56,7 @@ export default function Schedule() {
       description: "Fundamentos de como fazer sistemas computacionais enxergarem o mundo real."
     },
     {
-      time: "13:00 - 16:00",
+      time: "13:00 - 16:30",
       title: "OBI - Olimpíada Brasileira de Informática",
       speaker: "",
       type: "Minicurso",

@@ -38,7 +38,7 @@ export default function RegistrationModal({ isOpen, onClose }: RegistrationModal
             Palestras
           </a>
           <a 
-            href="https://ifeventos.ifsuldeminas.edu.br/participante/login"
+            href="https://ifeventos.ifsuldeminas.edu.br/"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-primary text-black border-4 border-black py-4 px-6 text-center font-black text-xl uppercase tracking-wider shadow-[4px_4px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#000] transition-all cursor-pointer"

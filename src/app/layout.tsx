@@ -32,7 +32,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${spaceGrotesk.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-dark text-light selection:bg-primary-bright selection:text-black overflow-x-hidden">
+      <body suppressHydrationWarning className="min-h-full flex flex-col font-sans bg-dark text-light selection:bg-primary-bright selection:text-black overflow-x-hidden">
         {children}
       </body>
     </html>

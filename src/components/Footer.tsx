@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="bg-secondary p-6 md:p-8 border-4 border-black shadow-[8px_8px_0_#00ff97] w-full">
             <h3 className="text-2xl font-black text-black mb-6 uppercase text-center md:text-left">Redes Sociais e Contato:</h3>
             <div className="flex flex-col md:flex-row items-stretch justify-center gap-6">
-               <a href="mailto:comunica.machado@ifsuldeminas.edu.br" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black px-8 py-6 flex items-center justify-center shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all cursor-pointer group min-h-[80px]">
+               <a href="mailto:luciano.carvalho@ifsuldeminas.edu.br" className="flex-1 bg-primary-bright hover:bg-white border-4 border-black px-8 py-6 flex items-center justify-center shadow-[6px_6px_0_#000] hover:-translate-y-1 hover:shadow-[8px_8px_0_#000] transition-all cursor-pointer group min-h-[80px]">
                  <span className="font-black text-xl text-black uppercase tracking-wider transition-colors flex items-center gap-3">
                    <FaEnvelope className="w-6 h-6" /> Enviar E-mail
                  </span>

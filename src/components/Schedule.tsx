@@ -57,6 +57,14 @@ export default function Schedule() {
     },
     {
       time: "13:00 - 16:30",
+      title: "Introdução ao Desenvolvimento PHP + Laravel",
+      speaker: "",
+      type: "Minicurso",
+      location: "Presencial",
+      description: "Aprenda a criar aplicações web modernas e robustas do zero utilizando PHP e o framework Laravel. (Limite: 20 vagas)"
+    },
+    {
+      time: "13:00 - 16:30",
       title: "OBI - Olimpíada Brasileira de Informática",
       speaker: "",
       type: "Minicurso",
